@@ -1,9 +1,27 @@
+import {Header} from './components/Header';
+import { Post } from './Post';
+
+import './global.css';
 
 
-function App() {
+export function App() {
   return (
-  <h1>Test</h1>
+    <div>
+      <Header />
+    <Post  
+    author="Sergio Rosa" 
+    content="Lorem ipsum dolor sit amet consectetur adipisicing elit.Itaque officia ea at ratione nemo explicabo distinctio.
+    Cum illo asperiores, impedit dolor ea animi optio corrupti ullam soluta ab est totam!"
+    />
+
+
+    <Post  
+      author="Joe Mike" 
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    />
+    
+    </div>
   )
 }
 
-export default App
+
