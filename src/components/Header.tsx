@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-// console.log(styles);
+import headLogo from '../assets/logo.svg';
+console.log(headLogo);
 
 
 export function Header(){
   return(
     <header className={styles.header}>
-      
-    <strong>Sergio Chat App</strong>
+      <img src={headLogo} alt="App LogoType" />
     </header>
   );
 }
